@@ -1,0 +1,75 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <select>
+            <option>SpeedGrader</option>
+        </select>
+        <hr>
+        <h3>Assignment Name</h3>
+        <input value="A1 - ENV + HTML"/><br/><br/>
+        <textarea cols="20" rows="2">This is the assignment description.</textarea><br/><br/>
+        <form id="point-value">
+            <label>Points</label><br/>
+            <input type="number" value="100"/>
+        </form>
+        <form id="assignment-group">
+            <label>Assignment Group</label><br/>
+            <select>
+                <option>ASSIGNMENTS</option>
+                <option>QUIZZES</option>
+                <option>EXAMS</option>
+                <option>PROJECT</option>
+            </select>
+        </form>
+        <form id="grade-display">
+            <label>Display Grade as</label><br/>
+            <select>
+                <option>Percentage</option>
+                <option>Number</option>
+            </select>
+        </form>
+        <form id="submission-type">
+            <label for="submission-type">Submission Type</label><br/>
+            <select id="submission-type">
+                <option>Online</option>
+                <option>In-Person</option>
+            </select>
+        </form>
+        <form id="online-options">
+            <label>Online Entry Options</label><br/>
+            <input type="checkbox" value="TEXTENTRY" name="online-options" id="chkbox-textentry"/>
+            <label for="chkbox-textentry">Text Entry</label><br/>
+            <input type="checkbox" value="WEBURL" name="online-options" id="chkbox-weburl"/>
+            <label for="chkbox-weburl">Website URL</label><br/>
+            <input type="checkbox" value="MEDIAREC" name="online-options" id="chkbox-mediarec"/>
+            <label for="chkbox-mediarec">Media Recordings</label><br/>
+            <input type="checkbox" value="STUDANNO" name="online-options" id="chkbox-stuanno"/>
+            <label for="chkbox-stuanno">Student Annotation</label><br/>
+            <input type="checkbox" value="FILEUP" name="online-options" id="chkbox-fileup"/>
+            <label for="chkbox-fileup">File Uploads</label>
+        </form>
+        <form id="assign">
+            <label for="assign">Assign</label><br/>
+            <form id="assign-to">
+                <label for="assign-to">Assign to</label><br/>
+                <input value="Everyone"/>
+            </form>
+            <form id="due-date">
+                <label for="due-date">Due</label><br/>
+                <input type="date" value="2021-01-01"/>
+            </form>
+            <form id="availiable-date">
+                <label for="availiable-date">Availiable from</label><br/>
+                <input type="date" value="2021-01-01"/>
+            </form>
+            <form id="until-date">
+                <label for="until-date">Until</label><br/>
+                <input type="date" value="2021-01-01"/>
+            </form>
+        </form>
+        <button type="button">Cancel</button>
+        <button type="button">Save</button>
+    </body>
+</html>
