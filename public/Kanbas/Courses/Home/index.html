@@ -1,6 +1,7 @@
 <html>
     <head>
         <link rel="stylesheet" href="/libs/bootstrap/bootstrap.min.css" />
+        <script src="/libs/bootstrap/bootstrap.bundle.min.js"></script>
         <link rel="stylesheet" href="/Kanbas/Courses/Modules/index.css" />
         <link rel="stylesheet" href="/Kanbas/Courses/Home/index.css" />
 
@@ -16,12 +17,17 @@
                         <div class="wd-mod-buttons">
                             <button type="button">Collapse All</button>
                             <button type="button">View Progress</button>
-                            <select id="select-publish">
-                                <option>Publish All</option>
-                                <option>Publish All Modules and Items</option>
-                                <option>Publish Modules Only</option>
-                                <option>Unpublish All</option>
-                            </select>
+                            <div class="dropdown">
+                                <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                  Publish All
+                                </button>
+                                <ul class="dropdown-menu">
+                                  <li><a class="dropdown-item" href="#">Publish All</a></li>
+                                  <li><a class="dropdown-item" href="#">Publish All Modules and Items</a></li>
+                                  <li><a class="dropdown-item" href="#">Publish Modules Only</a></li>
+                                  <li><a class="dropdown-item" href="#">Unpublish All</a></li>
+                                </ul>
+                              </div>
                             <button class="wd-button-red" type="button">+ Module</button>
                             <button type="button"><i class="fa fa-ellipsis-v"></i></button>
                         </div>
