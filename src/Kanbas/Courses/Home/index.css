@@ -1,0 +1,159 @@
+button {
+    border: none;
+    padding: 5px;
+    margin: 10px;
+}
+
+.wd-button-green {
+    background-color: rgb(24, 190, 24);
+    color: white;
+}
+
+.wd-button-green svg {
+    color: white;
+}
+
+.wd-status-buttons button {
+    display: block;
+    width: 95%;
+    text-align: left;
+}
+
+.wd-status-buttons {
+    justify-content: center;
+}
+
+.wd-publish-buttons button {
+    justify-content: center;
+}
+
+.wd-comming-up {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.wd-comming-up a {
+    color: rgb(185, 47, 47);
+    text-decoration: none;
+}
+
+.wd-comming-up-links a {
+    color: rgb(185, 47, 47);
+    text-decoration: none;
+}
+
+.wd-comming-up-links li {
+    color: rgb(185, 47, 47);
+    list-style: none;
+}
+
+.wd-top-black-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 85px;
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.wd-top-black-bar button {
+    background-color: black;
+    color: white;
+    border: none;
+}
+
+.wd-no-margin {
+    margin-bottom: 0;
+}
+
+.wd-active-resp a {
+    font-weight: bold;
+}
+
+.wd-nav-resp {
+    list-style: none;
+    margin: 0;
+    padding: 0%;
+}
+
+.wd-nav-resp a {
+    color: rgb(185, 47, 47);
+    text-decoration: none;
+}
+
+.wd-nav-resp i {
+    margin-right: 5px;
+}
+
+.wd-nav-resp a:hover {
+    text-decoration: underline;
+}
+
+.wd-collapse {
+    padding: 0;
+    margin-top: -25px;
+    margin-bottom: 25px;
+}
+
+.wd-card {
+    padding: 0%;
+    border: none;
+    border-radius: 0%;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.wd-kanbas-logo {
+   color: rgb(224, 55, 55);
+   font: sans-serif;
+   font-weight: bolder;
+   font-size: 3em;
+}
+
+.wd-offcanvas-header {
+    justify-content: space-between;
+}
+
+.offcanvas.offcanvas-start {
+    width: 100%;
+}
+
+.wd-off-nav button {
+    background-color: white;
+    color: black;
+}
+
+.wd-active-resp a {
+    font-weight: bold;
+}
+
+.wd-course-nav-resp li{
+    padding: 5px;     margin-bottom: 10px;
+    font-size: 1em;  text-align: left;
+    list-style: none;
+}
+
+.wd-course-nav-resp a {
+    color: rgb(224, 55, 55);
+    text-decoration: none;
+}
+
+.wd-course-nav-resp a:hover {
+    text-decoration: underline;
+}
+
+.wd-course-nav-resp i {
+    margin-right: 20px;
+    font-size: 2em;
+}
+
+.wd-lightgray-icon {
+    color: lightgray;
+}
+
+svg {
+    margin-bottom: 3px;
+}
