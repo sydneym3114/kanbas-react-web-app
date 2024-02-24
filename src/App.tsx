@@ -2,12 +2,12 @@ import './App.css';
 import Labs from './Labs';
 import HelloWorld from './Labs/a3/HelloWorld';
 import Kanbas from './Kanbas';
-import { BrowserRouter } from 'react-router-dom';
+import { HashRouter } from 'react-router-dom';
 import {Routes, Route, Navigate} from "react-router";
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <div>
         <Routes>
           <Route path="/" element={<Navigate to="/Labs/"/>}/>
@@ -16,7 +16,7 @@ function App() {
           <Route path="/hello" element={<HelloWorld/>}/>
         </Routes>
       </div>
-    </BrowserRouter>
+    </HashRouter>
     
   );
 }
