@@ -1,15 +1,13 @@
-import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 import Labs from './Labs';
 import HelloWorld from './Labs/a3/HelloWorld';
 import Kanbas from './Kanbas';
-import { HashRouter } from 'react-router-dom';
+import { BrowserRouter } from 'react-router-dom';
 import {Routes, Route, Navigate} from "react-router";
 
 function App() {
   return (
-    <HashRouter>
+    <BrowserRouter>
       <div>
         <Routes>
           <Route path="/" element={<Navigate to="/Labs/"/>}/>
@@ -18,7 +16,7 @@ function App() {
           <Route path="/hello" element={<HelloWorld/>}/>
         </Routes>
       </div>
-    </HashRouter>
+    </BrowserRouter>
     
   );
 }
