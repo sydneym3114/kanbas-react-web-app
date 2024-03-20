@@ -2,12 +2,12 @@
     background-color: black;
     list-style: none;
     padding: 0px;  margin: 0px;
-    width: 85px;
+    width: 80px;
     height: 100vh;
 }
 
 .wd-kanbas-navigation li {
-    padding: 10px;     margin-bottom: 5px;
+    padding: 8px;     margin-bottom: 5px;
     font-size: 0.8em;  text-align: center;
 }
 
@@ -37,6 +37,6 @@
 }
 
 .wd-kanbas-navigation img {
-    width: 85px;
+    width: 80px;
     margin-left: -10px;
 }

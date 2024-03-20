@@ -9,6 +9,11 @@ button {
     color: white;
 }
 
+.wd-button-blue {
+    background-color: rgb(50, 80, 248);
+    color: white;
+}
+
 .wd-button-green svg {
     color: white;
 }
@@ -156,4 +161,10 @@ button {
 
 svg {
     margin-bottom: 3px;
+}
+
+
+
+.wd-float-right {
+    float: right;
 }

@@ -1,4 +1,3 @@
-import { courses } from "../../Kanbas/Database";
 import { Navigate, Route, Routes, useParams, useLocation } from "react-router-dom";
 import { HiMiniBars3 } from "react-icons/hi2";
 import { FaChevronDown, FaCircle } from "react-icons/fa";
@@ -9,7 +8,7 @@ import Modules from "./Modules";
 import Home from "./Home";
 import Assignments from "./Assignments";
 import ResponsiveKanbasNav from "../Navigation/ResponsiveKanbasNav";
-function Courses() {
+function Courses({ courses }: { courses: any[]; }) {
   const { courseId } = useParams();
   const course = courses.find((course) => course._id === courseId);
   
@@ -40,7 +39,7 @@ function Courses() {
             <FaXmark/>
           </button>
         </div>
-        <div className="offcanvas-body">
+        <div className="offcanvas-body" data-bs-dismiss="offcanvas">
           <ResponsiveKanbasNav/>
         </div>
       </div>
@@ -62,7 +61,7 @@ function Courses() {
             <Routes>
                 <Route path="/" element={<Navigate to="Home" />} />
                 <Route path="Home" element={<Home/>} />
-                <Route path="Modules" element={<Modules/>} />
+                <Route path="Modules" element={<Modules/>}/>
                 <Route path="Piazza" element={<h1>Piazza</h1>} />
                 <Route path="Assignments" element={<Assignments/>} />
                 <Route path="Assignments/:assignmentId" element={<h1>Assignment Editor</h1>} />
@@ -79,7 +78,7 @@ function Courses() {
             <Routes>
                 <Route path="/" element={<Navigate to="Home" />} />
                 <Route path="Home" element={<Home/>} />
-                <Route path="Modules" element={<Modules/>} />
+                <Route path="Modules" element={<Modules/>}/>
                 <Route path="Piazza" element={<h1>Piazza</h1>} />
                 <Route path="Assignments" element={<Assignments/>} />
                 <Route path="Assignments/:assignmentId" element={<h1>Assignment Editor</h1>} />
