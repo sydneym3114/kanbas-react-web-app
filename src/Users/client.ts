@@ -1,7 +1,10 @@
 import axios from "axios";
 axios.defaults.withCredentials = true;
-export const BASE_API = process.env.REACT_APP_BASE_API_URL;
+export const BASE_API = process.env.REACT_APP_API_BASE;
+console.log(BASE_API);
+
 export const USERS_API = `${BASE_API}/api/users`;
+console.log(USERS_API);
 export interface User { _id: string; username: string; password: string; role: string;
 firstName: string, lastName: string };
 export const signin = async (credentials: User) => {
